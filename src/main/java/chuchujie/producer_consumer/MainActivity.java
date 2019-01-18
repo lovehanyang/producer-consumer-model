@@ -7,7 +7,7 @@ public class MainActivity {
     public static void main(String[] args) {
         System.out.println("Hello World!");
 
-        IFactoryModel model = new BlockingQueueModel(3);
+        IBaseModel model = new BlockingQueueModel(3);
 
         for (int i = 0; i < 2; i++) {
             new Thread(model.newRunnableConsumer()).start();

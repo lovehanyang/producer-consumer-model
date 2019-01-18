@@ -1,6 +1,6 @@
 package main.java.chuchujie.producer_consumer;
 
-public interface IFactoryModel {
+public interface IBaseModel {
     Runnable newRunnableConsumer();
 
     Runnable newRunnableProducer();

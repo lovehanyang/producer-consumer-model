@@ -3,14 +3,14 @@ package main.java.chuchujie.producer_consumer.method;
 
 import main.java.chuchujie.producer_consumer.AbstractConsumer;
 import main.java.chuchujie.producer_consumer.AbstractProducer;
-import main.java.chuchujie.producer_consumer.IFactoryModel;
+import main.java.chuchujie.producer_consumer.IBaseModel;
 import main.java.chuchujie.producer_consumer.Task;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class BlockingQueueModel implements IFactoryModel {
+public class BlockingQueueModel implements IBaseModel {
 
     private BlockingQueue<Task> queue;
     private AtomicInteger incrementTaskNo = new AtomicInteger(0);
