@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="086cb89f-5814-4ad1-b025-202f9f88b7ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/chuchujie/thread_in_order/JoinThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chuchujie/thread_in_order/MainActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chuchujie/thread_in_order/SemaphoreThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chuchujie/thread_in_order/WaitNotifyThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chuchujie/thread_in_order/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chuchujie/thread_in_order/MainActivity.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,12 +36,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="12" />
-          <entry key="java" value="2555" />
+          <entry key="java" value="2586" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2555" />
+          <entry key="JAVA" value="2586" />
           <entry key="PLAIN_TEXT" value="12" />
         </counts>
       </usages-collector>
@@ -64,16 +61,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/chuchujie/thread_in_order/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+            <state relative-caret-position="390">
+              <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/chuchujie/thread_in_order/SemaphoreThread.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="308">
@@ -207,8 +204,8 @@
         <option value="$PROJECT_DIR$/src/main/java/chuchujie/producer_consumer/method/OptimizeModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/chuchujie/thread_in_order/JoinThread.java" />
         <option value="$PROJECT_DIR$/src/main/java/chuchujie/thread_in_order/SemaphoreThread.java" />
-        <option value="$PROJECT_DIR$/src/main/java/chuchujie/thread_in_order/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/chuchujie/thread_in_order/WaitNotifyThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/chuchujie/thread_in_order/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -294,7 +291,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548071312463" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548071856054" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../pinduoduo-auto-pay" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -364,12 +361,12 @@
       <updated>1547784042029</updated>
       <workItem from="1547784045457" duration="1684000" />
       <workItem from="1547785821457" duration="7976000" />
-      <workItem from="1548036029621" duration="24193000" />
+      <workItem from="1548036029621" duration="24603000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33853000" />
+    <option name="totallyTimeSpent" value="34263000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -384,14 +381,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.072747014" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38762215" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3072747" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3072747" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.15960912" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -556,13 +553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/chuchujie/thread_in_order/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/chuchujie/thread_in_order/WaitNotifyThread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="597">
@@ -574,6 +564,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/chuchujie/thread_in_order/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
         </state>
       </provider>
     </entry>

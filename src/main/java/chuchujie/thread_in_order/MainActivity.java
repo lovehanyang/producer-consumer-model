@@ -1,5 +1,7 @@
 package main.java.chuchujie.thread_in_order;
 
+import java.util.concurrent.Semaphore;
+
 public class MainActivity {
 
     public static void main(String[] args) throws InterruptedException {
@@ -18,19 +20,24 @@ public class MainActivity {
 //        t3.start();
 //        t3.join();
 
-        Object a = "锁①";
-        Object b = "锁②";
-        Object c = "锁③";
-        WaitNotifyThread pa = new WaitNotifyThread("A", c, a);
-        WaitNotifyThread pb = new WaitNotifyThread("B", a, b);
-        WaitNotifyThread pc = new WaitNotifyThread("C", b, c);
+//        Object a = "锁①";
+//        Object b = "锁②";
+//        Object c = "锁③";
+//        WaitNotifyThread pa = new WaitNotifyThread("A", c, a);
+//        WaitNotifyThread pb = new WaitNotifyThread("B", a, b);
+//        WaitNotifyThread pc = new WaitNotifyThread("C", b, c);
+//
+//        new Thread(pa).start();
+//        Thread.sleep(10);// 保证初始 ABC 的启动顺序
+//        new Thread(pb).start();
+//        Thread.sleep(10);
+//        new Thread(pc).start();
+//        Thread.sleep(10);
 
-        new Thread(pa).start();
-        Thread.sleep(10);// 保证初始 ABC 的启动顺序
-        new Thread(pb).start();
-        Thread.sleep(10);
-        new Thread(pc).start();
-        Thread.sleep(10);
+         Semaphore A = new Semaphore(1);
+         Semaphore B = new Semaphore(0);
+         Semaphore C = new Semaphore(0);
+
     }
 
 
