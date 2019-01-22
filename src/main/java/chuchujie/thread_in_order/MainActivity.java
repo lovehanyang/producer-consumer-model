@@ -1,6 +1,10 @@
 package main.java.chuchujie.thread_in_order;
 
+import sun.java2d.loops.GraphicsPrimitive;
+
 import java.util.concurrent.Semaphore;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class MainActivity {
 
@@ -34,10 +38,33 @@ public class MainActivity {
 //        new Thread(pc).start();
 //        Thread.sleep(10);
 
-         Semaphore A = new Semaphore(1);
-         Semaphore B = new Semaphore(0);
-         Semaphore C = new Semaphore(0);
+//         Semaphore A = new Semaphore(1);
+//         Semaphore B = new Semaphore(0);
+//         Semaphore C = new Semaphore(0);
+//
+//        Thread t1 = new Thread(new SemaphoreThread("a", A, B));
+//        Thread t2 = new Thread(new SemaphoreThread("b", B, C));
+//        Thread t3 = new Thread(new SemaphoreThread("c", C, A));
+//
+//        t1.start();
+//        t2.start();
+//        t3.start();
 
+
+        ReentrantLock lock = new ReentrantLock();
+
+
+        Condition cona = lock.newCondition();
+        Condition conb = lock.newCondition();
+        Condition conc = lock.newCondition();
+
+        Thread t1 = new Thread(new LockConditionThread("A", lock, 0,  cona, conb));
+        Thread t2 = new Thread(new LockConditionThread("B", lock, 1,  conb, conc));
+        Thread t3 = new Thread(new LockConditionThread("C", lock, 2,  conc, cona));
+
+        t1.start();
+        t2.start();
+        t3.start();
     }
 
 
