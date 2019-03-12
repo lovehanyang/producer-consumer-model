@@ -10,19 +10,20 @@ public class MainActivity {
 
     public static void main(String[] args) throws InterruptedException {
         System.out.println("Hello World!");
-//
-//        Thread t1 = new Thread(new JoinThread("a"));
-//        Thread t2 = new Thread(new JoinThread("b"));
-//        Thread t3 = new Thread(new JoinThread("c"));
-//
-//        t1.start();
-//        t1.join();
-//
-//        t2.start();
-//        t2.join();
-//
-//        t3.start();
-//        t3.join();
+
+        Thread t1 = new Thread(new JoinThread("a"));
+        Thread t2 = new Thread(new JoinThread("b"));
+        Thread t3 = new Thread(new JoinThread("c"));
+
+        t1.start();
+        t1.join();
+        t1.yield();
+
+        t2.start();
+        t2.join();
+
+        t3.start();
+        t3.join();
 
 //        Object a = "锁①";
 //        Object b = "锁②";
@@ -51,20 +52,20 @@ public class MainActivity {
 //        t3.start();
 
 
-        ReentrantLock lock = new ReentrantLock();
-
-
-        Condition cona = lock.newCondition();
-        Condition conb = lock.newCondition();
-        Condition conc = lock.newCondition();
-
-        Thread t1 = new Thread(new LockConditionThread("A", lock, 0,  cona, conb));
-        Thread t2 = new Thread(new LockConditionThread("B", lock, 1,  conb, conc));
-        Thread t3 = new Thread(new LockConditionThread("C", lock, 2,  conc, cona));
-
-        t1.start();
-        t2.start();
-        t3.start();
+//        ReentrantLock lock = new ReentrantLock();
+//
+//
+//        Condition cona = lock.newCondition();
+//        Condition conb = lock.newCondition();
+//        Condition conc = lock.newCondition();
+//
+//        Thread t1 = new Thread(new LockConditionThread("A", lock, 0,  cona, conb));
+//        Thread t2 = new Thread(new LockConditionThread("B", lock, 1,  conb, conc));
+//        Thread t3 = new Thread(new LockConditionThread("C", lock, 2,  conc, cona));
+//
+//        t1.start();
+//        t2.start();
+//        t3.start();
     }
 
 
